@@ -5,8 +5,18 @@ Instructions: Ubuntu 18
 
 Let’s Encrypt has started supporting wildcard certificates using its new ACME2 protocol. So we can have one SSL certificate i.e *.example.com which can be used in all subdomains i.e test.example.com , test1.example.com etc.
 
-Make sure that you are using Certbot version 0.22 or above. Certbot before the version 0.22 does not support wildcard certificate. If you dont have Certbot on your machinne you will have to install it.
 
+You are welcome to upload the shell script ssl-cer-wildcard.sh for semi-automatic installation.
+
+Make the script executable with command:
+chmod +x ssl-cer-wildcard.sh
+
+Run the script using:
+./ssl-cer-wildcard.sh
+
+------------------------------------------------------------------------------
+
+Make sure that you are using Certbot version 0.22 or above. Certbot before the version 0.22 does not support wildcard certificate. If you dont have Certbot on your machinne you will have to install it. 
 
 1. Certbot is not available in the default ubuntu repository. Run the below command to add ppa repository.
 sudo add-apt-repository ppa:certbot/certbot
