@@ -21,13 +21,13 @@ Make sure that you are using Certbot version 0.22 or above. Certbot before the v
 1. Certbot is not available in the default ubuntu repository. Run the below command to add ppa repository.
 sudo add-apt-repository ppa:certbot/certbot
 
-2. Update packages using below command.
+2. Update packages using command:
 sudo apt update
 
-3. Run below command to install certbot
+3. Run command to install certbot:
 sudo apt install certbot
 
-4. Generate the cert. Edit the command below to suit your needs.
+4. Generate the cert. Edit the command to suit your needs:
 sudo certbot certonly --manual -d *.example.com -d example.com --agree-tos --no-bootstrap --manual-public-ip-logging-ok --preferred-challenges dns-01 --server https://acme-v02.api.letsencrypt.org/directory
 
 Sample Output:
